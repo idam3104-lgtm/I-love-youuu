@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>สิ่งที่อยากบอก...</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&family=Lato:wght@300;400&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Stars background -->
+  <div class="stars" id="stars"></div>
+
+  <!-- Falling petals -->
+  <div class="petals-container" id="petals"></div>
+
+  <!-- Main wrapper -->
+  <main class="wrapper">
+
+    <!-- Section 1: Opening -->
+    <section class="section-open reveal">
+      <p class="eyebrow">ถึงคนที่ฉันคิดถึงทุกวัน</p>
+      <h1 class="headline">
+        มีสิ่งหนึ่ง<br/>
+        <em>ที่อยากให้รู้</em>
+      </h1>
+      <div class="scroll-hint">
+        <span>เลื่อนลงมา</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Section 2: Moments -->
+    <section class="section-moments">
+      <div class="moment-item reveal">
+        <div class="moment-number">01</div>
+        <div class="moment-text">
+          <h2>ทุกครั้งที่เห็นเธอ</h2>
+          <p>หัวใจมันเต้นเร็วขึ้นโดยไม่รู้ตัว&nbsp;— เหมือนโลกทั้งใบหมุนช้าลงสักครึ่งหนึ่ง แล้วก็ไม่มีอะไรสำคัญอีกต่อไป</p>
+        </div>
+      </div>
+
+      <div class="moment-item reveal">
+        <div class="moment-number">02</div>
+        <div class="moment-text">
+          <h2>ทุกครั้งที่เธอยิ้ม</h2>
+          <p>ฉันพบว่าตัวเองกำลังหาเหตุผล ให้เธอยิ้มอีกครั้ง เพราะแค่นั้นก็ทำให้วันนี้ดีขึ้นแล้ว</p>
+        </div>
+      </div>
+
+      <div class="moment-item reveal">
+        <div class="moment-number">03</div>
+        <div class="moment-text">
+          <h2>ทุกครั้งที่เธอไม่อยู่</h2>
+          <p>ฉันถึงรู้ว่า&nbsp;— ห้องว่าง เสียงเงียบ และโทรศัพท์ที่ไม่มีชื่อเธอขึ้นมา&nbsp;— มันเป็นความรู้สึกที่ขาดอะไรบางอย่าง</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Heart reveal -->
+    <section class="section-heart reveal">
+      <div class="heart-wrap">
+        <div class="heart-icon">♥</div>
+        <p class="heart-label">สิ่งที่อยากบอกมานานแล้ว</p>
+      </div>
+      <h2 class="confession-text">
+        ฉัน<em>&thinsp;รักเธอ</em>
+      </h2>
+      <p class="confession-sub">
+        ไม่ใช่แค่ช่วงเวลาดีๆ แต่รวมถึงทุกวันธรรมดา ทุกความเงียบ และทุกครั้งที่เธอแค่ <em>มีอยู่</em>
+      </p>
+    </section>
+
+    <!-- Section 4: Ask -->
+    <section class="section-ask reveal">
+      <p class="ask-pre">แล้วเธอล่ะ...</p>
+      <h2 class="ask-question">จะให้ฉันอยู่ข้างๆ เธอได้ไหม?</h2>
+
+      <div class="buttons">
+        <button class="btn-yes" onclick="handleYes()">ได้เลย ♥</button>
+        <button class="btn-no" id="btnNo" onmouseover="escapeBtn(this)" ontouchstart="escapeBtn(this)">ยังไม่แน่ใจ</button>
+      </div>
+
+      <p class="btn-hint">* ลองกดดูสิ</p>
+    </section>
+
+    <!-- Section 5: Response -->
+    <section class="section-response" id="responseSection">
+      <div class="response-inner" id="responseInner"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer reveal">
+      <div class="footer-heart">♥</div>
+      <p>ด้วยความรักจากใจ</p>
+    </footer>
+
+  </main>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
